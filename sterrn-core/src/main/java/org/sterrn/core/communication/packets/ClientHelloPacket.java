@@ -4,7 +4,7 @@ import org.sterrn.core.communication.Packet;
 
 import java.util.UUID;
 
-public class ClientHello implements Packet {
+public class ClientHelloPacket implements Packet {
 
     private UUID id;
     private String version;
@@ -14,7 +14,7 @@ public class ClientHello implements Packet {
     private String machineName;
     private String userName;
 
-    public ClientHello() {
+    public ClientHelloPacket() {
     }
 
     public UUID getId() {

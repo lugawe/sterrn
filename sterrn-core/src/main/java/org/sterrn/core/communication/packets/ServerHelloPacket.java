@@ -4,12 +4,12 @@ import org.sterrn.core.communication.Packet;
 
 import java.util.UUID;
 
-public class ServerHello implements Packet {
+public class ServerHelloPacket implements Packet {
 
     private UUID id;
     private String version;
 
-    public ServerHello() {
+    public ServerHelloPacket() {
     }
 
     public UUID getId() {
