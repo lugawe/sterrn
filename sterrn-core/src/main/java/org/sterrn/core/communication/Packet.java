@@ -1,4 +1,6 @@
 package org.sterrn.core.communication;
 
-public interface Packet {
+import java.io.Serializable;
+
+public interface Packet extends Serializable {
 }
