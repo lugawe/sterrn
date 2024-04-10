@@ -8,7 +8,7 @@
     <parent>
         <groupId>org.sterrn</groupId>
         <artifactId>sterrn-project</artifactId>
-        <version>1.0-SNAPSHOT</version>
+        <version>0.1</version>
     </parent>
 
     <artifactId>sterrn-bom</artifactId>
@@ -20,17 +20,17 @@
             <dependency>
                 <groupId>org.sterrn</groupId>
                 <artifactId>sterrn-core</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>0.1</version>
             </dependency>
             <dependency>
                 <groupId>org.sterrn</groupId>
                 <artifactId>sterrn-server</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>0.1</version>
             </dependency>
             <dependency>
                 <groupId>org.sterrn</groupId>
                 <artifactId>sterrn-client</artifactId>
-                <version>1.0-SNAPSHOT</version>
+                <version>0.1</version>
             </dependency>
 
         </dependencies>
