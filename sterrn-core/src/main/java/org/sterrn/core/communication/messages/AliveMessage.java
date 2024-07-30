@@ -1,12 +1,12 @@
-package org.sterrn.core.communication.packets;
+package org.sterrn.core.communication.messages;
 
-import org.sterrn.core.communication.Packet;
+import org.sterrn.core.communication.Message;
 
-public class AlivePacket implements Packet {
+public class AliveMessage implements Message {
 
     private long timestamp;
 
-    public AlivePacket() {
+    public AliveMessage() {
     }
 
     public long getTimestamp() {

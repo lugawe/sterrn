@@ -1,15 +1,15 @@
-package org.sterrn.core.communication.packets;
+package org.sterrn.core.communication.messages;
 
-import org.sterrn.core.communication.Packet;
+import org.sterrn.core.communication.Message;
 
 import java.util.UUID;
 
-public class ServerHelloPacket implements Packet {
+public class ServerHelloMessage implements Message {
 
     private UUID id;
     private String version;
 
-    public ServerHelloPacket() {
+    public ServerHelloMessage() {
     }
 
     public UUID getId() {

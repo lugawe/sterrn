@@ -1,15 +1,15 @@
-package org.sterrn.core.communication.packets;
+package org.sterrn.core.communication.messages;
 
-import org.sterrn.core.communication.Packet;
+import org.sterrn.core.communication.Message;
 
-public class ThrowablePacket implements Packet {
+public class ThrowableMessage implements Message {
 
     private Throwable throwable;
 
-    public ThrowablePacket() {
+    public ThrowableMessage() {
     }
 
-    public ThrowablePacket(Throwable throwable) {
+    public ThrowableMessage(Throwable throwable) {
         this.throwable = throwable;
     }
 

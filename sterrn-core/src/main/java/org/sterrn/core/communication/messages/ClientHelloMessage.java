@@ -1,10 +1,10 @@
-package org.sterrn.core.communication.packets;
+package org.sterrn.core.communication.messages;
 
-import org.sterrn.core.communication.Packet;
+import org.sterrn.core.communication.Message;
 
 import java.util.UUID;
 
-public class ClientHelloPacket implements Packet {
+public class ClientHelloMessage implements Message {
 
     private UUID id;
     private String version;
@@ -14,7 +14,7 @@ public class ClientHelloPacket implements Packet {
     private String machineName;
     private String userName;
 
-    public ClientHelloPacket() {
+    public ClientHelloMessage() {
     }
 
     public UUID getId() {
