@@ -19,7 +19,7 @@
         <!-- dependencies -->
         <slf4j.version>2.0.12</slf4j.version>
         <guice.version>7.0.0</guice.version>
-        <guava.version>33.2.0-jre</guava.version>
+        <guava.version>33.2.1-jre</guava.version>
         <jakarta.jms.version>3.1.0</jakarta.jms.version>
         <activemq.version>6.1.2</activemq.version>
         <dropwizard.version>4.0.7</dropwizard.version>
@@ -28,7 +28,7 @@
         <!-- maven plugins -->
         <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
-        <maven-surefire-plugin.version>3.3.0</maven-surefire-plugin.version>
+        <maven-surefire-plugin.version>3.3.1</maven-surefire-plugin.version>
         <maven-shade-plugin.version>3.6.0</maven-shade-plugin.version>
     </properties>
 
