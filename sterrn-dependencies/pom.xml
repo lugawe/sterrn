@@ -21,10 +21,10 @@
         <guice.version>7.0.0</guice.version>
         <guava.version>33.2.1-jre</guava.version>
         <jakarta.jms.version>3.1.0</jakarta.jms.version>
-        <activemq.version>6.1.2</activemq.version>
+        <activemq.version>6.1.3</activemq.version>
         <dropwizard.version>4.0.7</dropwizard.version>
         <dropwizard-guicey.version>7.1.3</dropwizard-guicey.version>
-        <junit.version>5.10.2</junit.version>
+        <junit.version>5.11.0</junit.version>
         <!-- maven plugins -->
         <maven-resources-plugin.version>3.3.1</maven-resources-plugin.version>
         <maven-compiler-plugin.version>3.13.0</maven-compiler-plugin.version>
