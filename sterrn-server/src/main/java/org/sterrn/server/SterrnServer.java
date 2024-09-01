@@ -7,8 +7,11 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.sterrn.core.Sterrn;
 import org.sterrn.core.util.Lazy;
+import ru.vyarus.dropwizard.guice.GuiceBundle;
 
 public class SterrnServer extends Application<SterrnServerConfiguration> {
+
+    public static final String BASE_PACKAGE = "org.sterrn.server";
 
     private static final Logger log = LoggerFactory.getLogger(SterrnServer.class);
 
@@ -20,6 +23,9 @@ public class SterrnServer extends Application<SterrnServerConfiguration> {
 
     @Override
     public void initialize(Bootstrap<SterrnServerConfiguration> bootstrap) {
+        bootstrap.addBundle(GuiceBundle.builder()
+                .enableAutoConfig(BASE_PACKAGE)
+                .build());
     }
 
     @Override
