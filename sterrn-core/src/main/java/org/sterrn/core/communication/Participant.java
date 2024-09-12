@@ -7,4 +7,6 @@ public interface Participant extends Serializable {
 
     UUID getId();
 
+    String getQueueName();
+
 }
