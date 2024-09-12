@@ -21,6 +21,11 @@
             <artifactId>sterrn-core</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>net.sourceforge.argparse4j</groupId>
+            <artifactId>argparse4j</artifactId>
+        </dependency>
+
     </dependencies>
 
 </project>
