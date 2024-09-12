@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.sterrn.core.Sterrn;
 import org.sterrn.core.util.Lazy;
+import org.sterrn.server.modules.ServerModule;
 import ru.vyarus.dropwizard.guice.GuiceBundle;
 
 public class SterrnServer extends Application<SterrnServerConfiguration> {
@@ -25,6 +26,7 @@ public class SterrnServer extends Application<SterrnServerConfiguration> {
     public void initialize(Bootstrap<SterrnServerConfiguration> bootstrap) {
         bootstrap.addBundle(GuiceBundle.builder()
                 .enableAutoConfig(BASE_PACKAGE)
+                .modules(new ServerModule())
                 .build());
     }
 
