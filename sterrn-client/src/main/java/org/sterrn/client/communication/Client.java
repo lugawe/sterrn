@@ -2,14 +2,14 @@ package org.sterrn.client.communication;
 
 import jakarta.inject.Inject;
 import jakarta.inject.Singleton;
-import org.sterrn.core.communication.Participant;
+import org.sterrn.core.communication.Sender;
 import org.sterrn.core.util.Lazy;
 
 import java.util.Objects;
 import java.util.UUID;
 
 @Singleton
-public class Client implements Participant {
+public class Client implements Sender {
 
     private final Lazy<UUID> id = Lazy.of(UUID::randomUUID);
 
