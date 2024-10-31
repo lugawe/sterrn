@@ -1,0 +1,12 @@
+@startuml
+
+participant Client
+participant Server
+
+Client -> Server : ClientHelloMessage
+Server -> Server : Check Auth
+Server -> Server : Store Client Information
+Server -> Client : ServerHelloMessage
+Client -> Client : Store Server Information
+
+@enduml
