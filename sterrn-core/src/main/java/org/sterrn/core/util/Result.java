@@ -1,7 +1,6 @@
 package org.sterrn.core.util;
 
 import java.io.Serializable;
-import java.util.Objects;
 import java.util.Optional;
 
 public final class Result<T> implements Serializable {
@@ -19,11 +18,11 @@ public final class Result<T> implements Serializable {
         this.throwable = throwable;
     }
 
-    public T tryGet() throws Throwable {
-        if (value != null) {
-            return value;
+    public T tryGetValue() throws Throwable {
+        if (throwable != null) {
+            throw throwable;
         }
-        throw Objects.requireNonNull(throwable, "throwable is null");
+        return value;
     }
 
     public Optional<T> asOptional() {
@@ -36,6 +35,18 @@ public final class Result<T> implements Serializable {
 
     public Throwable getThrowable() {
         return throwable;
+    }
+
+    public static <T> Result<T> of(CheckedSupplier<T> supplier) {
+        try {
+            return new Result<>(supplier.checkedGet());
+        } catch (Throwable throwable) {
+            return new Result<>(throwable);
+        }
+    }
+
+    public static <T> Result<T> empty() {
+        return new Result<>((T) null);
     }
 
 }
